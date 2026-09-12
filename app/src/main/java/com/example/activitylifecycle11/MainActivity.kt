@@ -39,7 +39,7 @@ class MainActivity : ComponentActivity() {
                 ) {
                     Image(
                         painter = painterResource(id = R.drawable.my_photo),
-                        contentDescription = "Student Photo",
+                        contentDescription = "Student Photo", // Student photo
                         modifier = Modifier.size(250.dp),
                         contentScale = ContentScale.Crop
                     )
