@@ -77,4 +77,24 @@ class MainActivity : ComponentActivity() {
             Toast.LENGTH_SHORT
         ).show()
     }
+
+    override fun onStop() {
+        super.onStop()
+
+        Toast.makeText(
+            applicationContext,
+            "onStop()",
+            Toast.LENGTH_SHORT
+        ).show()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        Toast.makeText(
+            applicationContext,
+            "onDestroy()",
+            Toast.LENGTH_SHORT
+        ).show()
+    }
 }
